@@ -93,14 +93,15 @@ module.exports = {
 
 		var buttonPayload = req.body.payload
 		buttonPayload = JSON.parse(buttonPayload)
-
-
+		
 		if (buttonPayload.actions[0].name === 'noPermissionNeeded') {
 
 			res.ok({ text: buttonPayload.actions[0].value })
 		}
 
 		if (buttonPayload.actions[0].name === 'UserPermissionRequired') {
+			
+		//@ToDo check DataBase (if not User Permission in DB send ask_for_permission) 
 
 			var ask_for_permission = {
 				text: 'User Permission is require :no_entry_sign:' + ' Press the link  ' + '<https://slack.com/oauth/authorize?&client_id=' + Slack_Client_ID + '&redirect_uri= Auth_URL ' +
