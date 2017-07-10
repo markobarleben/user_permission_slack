@@ -1,4 +1,3 @@
-# permissonTutorial
+# Slack User Permission
 
-a [Sails](http://sailsjs.org) application
-# user_permission_slack
+A [Sails](http://sailsjs.org) sample controller that handle a user permission in slack
