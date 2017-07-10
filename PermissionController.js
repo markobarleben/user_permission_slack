@@ -2,7 +2,7 @@
  * PermissionController.js
  *
  * @description :: Simple Sails Controller that handle User permissions in Slack
- * @docs        :: Check Sails for more Information about Controllers http://sailsjs.org/documentation/
+ * @docs        :: Check Sails for more Information about Controllers and Models http://sailsjs.org/documentation/
  * Version 0.1
  * 
  * 
