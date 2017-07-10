@@ -1,7 +1,7 @@
 /**
  * Newspipe.js
  *
- * @description :: Data base action in SailsJS .
+ * @description :: Check if user in data base. If not create new user.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
