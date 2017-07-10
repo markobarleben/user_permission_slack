@@ -12,45 +12,9 @@
  * module.exports.routes = {
 
   '/main' : 'PermissionController.main',
-  '/buttonAction': 'PermissionController.buttonAction',
-
-	};
- *
- * 
- * **************+**** Database *******************
- * 
- * // if user in DB get oauth_token
-	checkUser: function(option, cb) {
-
-		var user_id = option.user_id;
-		var team_id = option.team_id;
-
-		Permission.find({
-				user_id: user_id,
-				team_id: team_id
-			})
-			.exec(function(err, user) {
-				if (err) return cb(err);
-				cb(null, user);
-			})
-	},
-
-	// is user not in db create a new user  
-	createUser: function(option, cb) {
-
-		var user_id = option.user_id;
-		var team_id = option.team_id;
-		var oauth_token = option.oauth_token;
-
-		Permission.create({
-			user_id: user_id,
-			team_id: team_id,
-			oauth_token: oauth_token
-		}).exec(function(err, user) {
-			if (err) return cb(err);
-			return cb(null, user);
-		})
-	},
+  '/buttonAction': 'PermissionController.buttonAction'
+  
+   };
  * 
  */
 
